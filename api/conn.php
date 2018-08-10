@@ -12,8 +12,8 @@ header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Headers: x-requested-with,content-type");
 function connect($key)
 {
-    // 07c8b314f9a4239290b13aa91be78348 连接数据库的私钥,由md5(fruit_tree)加密
-    if ($key != '07c8b314f9a4239290b13aa91be78348') {
+    //  连接数据库的私钥
+    if ($key != 'key') {
         // 未经授权不可获取数据库连接
         return null;
     }

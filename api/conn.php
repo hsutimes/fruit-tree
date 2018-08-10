@@ -17,10 +17,10 @@ function connect($key)
         // 未经授权不可获取数据库连接
         return null;
     }
-    $host = "bdm257063697.my3w.com";
-    $name = "bdm257063697";
-    $password = "o141592653589793";
-    $database = "bdm257063697_db";
+    $host = "localhost";
+    $name = "root";
+    $password = "";
+    $database = "db";
     // 连接数据库
     $conn = mysqli_connect($host, $name, $password, $database);
     // 设置编码，防止中文乱码

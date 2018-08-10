@@ -1,0 +1,9 @@
+# 开启 rewrite 功能
+Options +FollowSymlinks
+RewriteEngine on
+
+# 重写规则
+RewriteRule ^add/tree$             api/addtree.php [nc,qsa]
+RewriteRule ^delete/tree$             api/addtree.php [nc,qsa]
+RewriteRule ^tree/list$             api/tree.php [nc,qsa]
+RewriteRule ^tree/detail             api/treeinfo.php [nc,qsa]
